@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8"> <!-- Кодировка -->
+	<title>Все рецепты.ру</title> <!-- Основной заголовк -->
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> <!-- Использование css -->
+</head>
+	
+<body>
+	<nav><!--  Меню --> 
+		<ul> 
+		  <li>
+			  <a href="/">Главная</a>
+		  </li>
+		  <li>
+			  <a>Рецепты</a>
+			  <ul>
+				  <li><a href="/meat">Мясо</a></li> 
+				  <li><a href="/salat">Салаты</a></li>
+				  <li><a href="/sup">Супы</a></li>
+				  <li><a href="/desert">Десерты</a></li>
+			  </ul>
+		  </li>
+		  <li>
+			<a href="/menu">Наше меню</a>
+		  </li>
+		  <li>
+			<a href="/info">О нас</a>
+		  </li>
+		</ul>
+	  </nav> 
+	  
+	  <div class="main">
+	  <div clas="main-left">
+	  <div class="regst"> <!--Вход или регистрация-->
+		  <p><br></p>
+		  <h3>Войти</h3>
+		  <input type="text" placeholder="Email или Номер телефона" id="username">
+		  <input type="text" placeholder="Пароль" id="password">
+		  <button>Войти</button>
+		  <h5>Впервые у нас? <a href="/regis">Регистрируйся</a></h5>
+	  </div>
+	  </div>
+	  
+	  <div class="main-right">
+	  <div class="photo-container-1" vspace="5" hspace="5"> <!--Реклама-->
+		  <div class="photo-0">
+			  <img src="https://img.freepik.com/free-psd/delicious-burger-and-food-menu-instagram-and-facebook-story-template_106176-1402.jpg?w=360&t=st=1684961132~exp=1684961732~hmac=09f9b80db916bf0cee96b528a5462c4316dae5e48a822ca2246dabf9ffb2929c">
+		  </div>    
+		  <div class="photo-1">
+			  <img src="https://img.freepik.com/free-psd/delicious-burger-and-food-menu-instagram-and-facebook-story-template_106176-1402.jpg?w=360&t=st=1684961132~exp=1684961732~hmac=09f9b80db916bf0cee96b528a5462c4316dae5e48a822ca2246dabf9ffb2929c">
+		  </div>
+		  <div class="photo-2">
+			  <img src="https://img.freepik.com/free-psd/food-menu-and-restaurant-instagram-and-facebook-story-template_106176-776.jpg?w=360&t=st=1684961318~exp=1684961918~hmac=28f8afa999a4f3963d5bbc10789ff2b8623b76b0378b2fbc4a24d38e5a658830">
+		  </div>
+	  </div>
+	  </div>
+	  
+	   <div class="top"><!--Блок с рецептами-->
+		  <h2>СУПЫ</h2>
+	  
+	  <div class="recept"> <!--Один рецепт-->
+		  <img class="rec" src="https://kvashenaya-kapusta.ru/wp-content/uploads/b/2/e/b2e6eca4f048cc19960d4b337df3f27e.jpeg" >
+		  <p>Куриный суп с вермишелью</p>
+		  <p style="font-size: 1.2em;">ЭКуриный суп с вермишелью с удовольствием съедят и дети, и взрослые. Рецепт супа из куриного филе очень прост.</p>
+		  <table>
+			  <tr class="colo">
+				  <th>Филе куриного </th>
+				  <th>1000гр</th>
+			  </tr>
+			  <tr>
+				  <th>Картофель </th>
+				  <th>1-2шт</th>
+			  </tr>
+			  <tr class="colo">
+				  <th>Морковь </th>
+				  <th>1шт</th>
+			  </tr>
+			  <tr>
+				  <th>Лук </th>
+				  <th>1шт</th>
+			  </tr>
+			  <tr class="colo">
+				  <th>Вермешель </th>
+				  <th>100гр</th>
+			  </tr>
+		  </table>
+	  <div class="ic">
+		  <p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  1.40 часа</p>   
+		  <p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> 5х200гр</p>
+	  </div>
+	  <p><br></p>
+	  </div>
+	  
+	  <div class="recept"> <!--Один рецепт-->
+		  <img class="rec" src="https://www.cuisine-et-mets.com/wp-content/uploads/2017/11/Fotolia_175798913_Subscription_Monthly_XXLopt.jpg" >
+		  <p>Томатный суп с курицей, фасолью и овощами</p>
+		  <p style="font-size: 1.2em;">Суп с курицей, консервированной фасолью, помидорами в собственном соку и свежим сладким перцем – густое и насыщенное первое блюдо, которое очень быстро готовится.</p>
+		  <table>
+			  <tr class="colo">
+				  <th>Куриное филе </th>
+				  <th>350гр</th>
+			  </tr>
+			  <tr>
+				  <th>Фасоль </th>
+				  <th>200гр</th>
+			  </tr>
+			  <tr class="colo">
+				  <th>Помидоры </th>
+				  <th>400гр</th>
+			  </tr>
+			  <tr>
+				  <th>Перец болг. </th>
+				  <th>1шт</th>
+			  </tr>
+			  <tr class="colo">
+				  <th>Морковь </th>
+				  <th>1шт</th>
+			  </tr>
+			  <tr>
+				  <th>Чеснок </th>
+				  <th>1зубчики</th>
+			  </tr>
+			  <tr class="colo">
+				  <th>Масло</th>
+				  <th>2ст.ложки</th>
+			  </tr>
+		  </table>
+	  <div class="ic">
+		  <p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  2.22 часа</p>   
+		  <p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> 4х190гр</p>
+	  </div>
+	  <p><br></p>
+	  </div>
+	  
+	  <div class="recept"> <!--Один рецепт-->
+		<img class="rec" src="https://postila.ru/data/4f/8d/dc/f0/4f8ddcf0d5394505ab11a712261f56a455dd77f7bf19111b0572136d92cf6427.jpg" >
+		<p>Сырный суп с шампиньонами</p>
+		<p style="font-size: 1.2em;">Сырный суп с шампиньонами достаточно быстро готовится и получается очень сытным и вкусным. Насыщенный сырно-сливочный вкус и аппетитный грибной аромат с нотками свежего укропа делают это первое блюдо просто великолепным.</p>
+		<table>
+			<tr class="colo">
+				<th>Шампиньоны </th>
+				<th>500гр</th>
+			</tr>
+			<tr>
+				<th>Сыр плавленый </th>
+				<th>200гр</th>
+			</tr>
+			<tr class="colo">
+				<th>Сметана </th>
+				<th>100гр</th>
+			</tr>
+			<tr>
+				<th>Картофель </th>
+				<th>350гр</th>
+			</tr>
+			<tr class="colo">
+				<th>Морковь</th>
+				<th>100гр</th>
+			</tr>
+		</table>
+	<div class="ic">
+		<p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  1.30 часа</p>   
+		<p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> 3х200гр</p>
+	</div>
+	  <p><br></p>
+	  </div>
+	  
+	  <div class="recept"> <!--Один рецепт-->
+		  <img class="rec" src="https://vsemrecept.ru/wp-content/uploads/2017/09/шшшикапутотка.jpg" >
+		  <p>Щи из свежей капусты</p>
+		  <p style="font-size: 1.2em;">Щи со свежими овощами, с молодой картошкой, с помидорами и сладким перцем. Варятся щи без мяса, на овощном бульоне.</p>
+		  <table>
+			  <tr class="colo">
+				  <th>Капуста белокочанная </th>
+				  <th>750гр</th>
+			  </tr>
+			  <tr>
+				  <th>Картофель </th>
+				  <th>6шт</th>
+			  </tr>
+			  <tr class="colo">
+				  <th>Помидоры </th>
+				  <th>2шт</th>
+			  </tr>
+			  <tr>
+				  <th>Перец болгарский </th>
+				  <th>1шт</th>
+			  </tr>
+			  <tr class="colo">
+				  <th>Бульон овощной </th>
+				  <th>1500мл</th>
+			  </tr>
+		  </table>
+	  <div class="ic">
+		  <p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  2.16 часа</p>   
+		  <p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> 4х210гр</p>
+	  </div>
+	  <p><br></p>
+	  </div>
+	  <p><br>
+	  <br></p>
+	  </div>
+	  </div>
+	  <footer class="footer-distributed">
+
+		<div class="footer-left">
+	
+		  <h3>Всерецепты.ру</h3>
+		 <div class="footer-links">
+		  <h5><a href="/">Главная<br></a></h5>
+		  <h5><a>Рецепты</a></h5>
+		  <ul class="nul">
+			<li>
+			  <a  href="/meat">Мясо</a>
+			</li>
+	
+			<li>
+			  <a href="/sup">Супы</a>
+			</li>
+				
+			<li>
+			  <a href="/salat">Салаты</a>
+			</li>
+			<li>
+				<a href="/desert">Десерты</a>
+			  </li>
+		  </ul>
+		<h5><a href="/menu">Наше меню</a></h5>
+		<h5><a href="/info">О нас</a></h5>
+		</div>
+		  <p class="footer-company-name">All Recepts © 2023</p>
+	
+		  <div class="footer-icons">
+	
+			<a href="http://facebook.com/"><img src="https://img.icons8.com/?size=512&id=435&format=png"></a>
+			<a href="https://vk.com/feed"><img src="https://img.icons8.com/?size=512&id=38514&format=png"></a>
+			<a href="https://web.telegram.org/a/"><img src="https://img.icons8.com/?size=512&id=9R1sV3QvY18K&format=png"></a>
+		  </div>
+		</div>
+	
+		<div class="footer-right">
+			<div class="footer-links">
+		  <h5><a href="/recept">Предложить свой рецепт</a></h5>
+		</div>
+	</div>
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	  <script>
+			  $('body').append('<div class="upbtn"></div>');			
+			  $(window).scroll(function() {
+			  if ($(this).scrollTop() > 100) {
+			  $('.upbtn').css({
+			  transform: 'scale(1)'
+			  });
+			  } else {
+			  $('.upbtn').css({
+			  transform: 'scale(0)'
+			  });
+			  }
+			  });
+			  $('.upbtn').on('click',function() {
+			  $('html, body').animate({
+			  scrollTop: 0
+			  }, 500);
+			  return false;
+			  
+			  });
+		  </script>
+	  <div class="upbtn" style="transform: scale(1);"></div>
+		</footer>
+
+</body>
+</html>

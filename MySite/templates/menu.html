@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8"> <!-- Кодировка -->
+	<title>Все рецепты.ру</title> <!-- Основной заголовк -->
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">  <!-- Использование css -->
+</head>
+	
+<body>
+	<nav><!--  Меню --> 
+		<ul> 
+		  <li>
+			  <a href="/">Главная</a>
+		  </li>
+		  <li>
+			  <a>Рецепты</a>
+			  <ul>
+				  <li><a href="/meat">Мясо</a></li> 
+				  <li><a href="/salat">Салаты</a></li>
+				  <li><a href="/sup">Супы</a></li>
+				  <li><a href="/desert">Десерты</a></li>
+			  </ul>
+		  </li>
+		  <li>
+			<a href="/menu">Наше меню</a>
+		  </li>
+		  <li>
+			<a href="/info">О нас</a>
+		  </li>
+		</ul>
+	  </nav> 
+
+
+<div class="main">
+<div clas="main-left">
+<div class="regst"> <!--Вход или регистрация-->
+	<p><br></p>
+	<h3>Войти</h3>
+    <input type="text" placeholder="Email или Номер телефона" id="username">
+	<input type="text" placeholder="Пароль" id="password">
+	<button>Войти</button>
+	<h5>Впервые у нас? <a href="/regiss">Регистрируйся</a></h5>
+</div>
+</div>
+
+<div class="main-right">
+<div class="photo-container-1" vspace="5" hspace="5"> <!--Реклама-->
+    <div class="photo-0">
+        <img src="https://img.freepik.com/free-psd/delicious-burger-and-food-menu-instagram-and-facebook-story-template_106176-1402.jpg?w=360&t=st=1684961132~exp=1684961732~hmac=09f9b80db916bf0cee96b528a5462c4316dae5e48a822ca2246dabf9ffb2929c">
+    </div>    
+    <div class="photo-1">
+        <img src="https://img.freepik.com/free-psd/delicious-burger-and-food-menu-instagram-and-facebook-story-template_106176-1402.jpg?w=360&t=st=1684961132~exp=1684961732~hmac=09f9b80db916bf0cee96b528a5462c4316dae5e48a822ca2246dabf9ffb2929c">
+    </div>
+    <div class="photo-2">
+        <img src="https://img.freepik.com/free-psd/food-menu-and-restaurant-instagram-and-facebook-story-template_106176-776.jpg?w=360&t=st=1684961318~exp=1684961918~hmac=28f8afa999a4f3963d5bbc10789ff2b8623b76b0378b2fbc4a24d38e5a658830">
+    </div>
+</div>
+</div>
+
+ <div class="top"><!--Блок с рецептами-->
+	<h2>Меню <span>Всерецепты.ру</span></h2>
+	<p>У нас есть своя собственная <span>доставка еды</span>. Разнообразие еды обширное. Вы можете заказать как <span>фастфуд</span>, так  и <span>правильное питание</span>.</p>
+	<p>Заказать можно по номеру телефона <span>8(901)012-23-12</span></p>
+
+<div class="recept"> <!--Один рецепт-->
+	<img class="rec" src="https://lobsterhouse.ru/wp-content/uploads/7/2/6/726dd9d8914e72bc396165fcb0a7b860.jpeg" >
+	<p>Пицца с колбасой, помидорами и сыром</p>
+	<p style="font-size: 1.2em;">Ароматная, сочная, с хрустящими краями… Это блюдо обожают взрослые и дети. </p>
+<div class="ic">
+	<p style="float:left;"><img src="https://cdn-icons-png.flaticon.com/512/2769/2769409.png">  700рублей</p>   
+	<p style="float:right;"><img src="https://cdn-icons-png.flaticon.com/512/549/549421.png"> 800гр</p>
+</div>
+<p><br></p>
+</div>
+
+<div class="recept"> <!--Один рецепт-->
+	<img class="rec" src="https://ohotamyasa.ru/wp-content/uploads/9/2/0/9207a5eba957022713eed5e27a36a3c7.jpeg" >
+	<p>Гречка с мясом и овощями</p>
+	<p style="font-size: 1.2em;">Гречка ароматная, рассыпчатая, не сухая, пропитанная подливой со специями. И нежные, сочные кусочки мяса. </p>
+<div class="ic">
+	<p style="float:left;"><img src="https://cdn-icons-png.flaticon.com/512/2769/2769409.png">  200рублей</p>   
+	<p style="float:right;"><img src="https://cdn-icons-png.flaticon.com/512/549/549421.png"> 280гр</p>
+</div>
+<p><br></p>
+</div>
+<div class="recept"> <!--Один рецепт-->
+	<img class="rec" src="https://i.pinimg.com/originals/0b/31/33/0b31333f7f0ff60b216431fb6645d5e5.jpg" >
+	<p>Чизбургер с котлетой из говяжьего фарша</p>
+	<p style="font-size: 1.2em;">Бургер классический – это разрезанная пополам булочка с жареной котлетой из мясного фарша в середине. </p>
+<div class="ic">
+	<p style="float:left;"><img src="https://cdn-icons-png.flaticon.com/512/2769/2769409.png">  300рублей</p>   
+	<p style="float:right;"><img src="https://cdn-icons-png.flaticon.com/512/549/549421.png"> 250гр</p>
+</div>
+<p><br></p>
+</div>
+<div class="recept"> <!--Один рецепт-->
+	<img class="rec" src="http://klublady.ru/uploads/posts/2022-02/1644996838_8-klublady-ru-p-chizkeik-klassicheskii-foto-9.jpg" >
+	<p>Чизкейк Нью-Йорк</p>
+	<p style="font-size: 1.2em;">Чизкейк "Нью-Йорк" с нежной шелковистой текстурой и легкими нотками лимона</p>
+<div class="ic">
+	<p style="float:left;"><img src="https://cdn-icons-png.flaticon.com/512/2769/2769409.png">  240рублей</p>   
+	<p style="float:right;"><img src="https://cdn-icons-png.flaticon.com/512/549/549421.png"> 200гр</p>
+</div>
+<p><br></p>
+</div>
+<p><br></p>
+ </div>
+ <footer class="footer-distributed">
+
+	<div class="footer-left">
+
+	  <h3>Всерецепты.ру</h3>
+ 	<div class="footer-links">
+	  <h5><a href="/">Главная<br></a></h5>
+	  <h5><a>Рецепты</a></h5>
+      <ul class="nul">
+        <li>
+          <a  href="/meat">Мясо</a>
+        </li>
+
+        <li>
+          <a href="/sup">Супы</a>
+        </li>
+            
+        <li>
+          <a href="/salat">Салаты</a>
+        </li>
+		<li>
+			<a href="/desert">Десерты</a>
+		  </li>
+      </ul>
+	<h5><a href="/menu">Наше меню</a></h5>
+	<h5><a href="/info">О нас</a></h5>
+	</div>
+	  <p class="footer-company-name">All Recepts © 2023</p>
+
+	  <div class="footer-icons">
+
+		<a href="http://facebook.com/"><img src="https://img.icons8.com/?size=512&id=435&format=png"></a>
+		<a href="https://vk.com/feed"><img src="https://img.icons8.com/?size=512&id=38514&format=png"></a>
+		<a href="https://web.telegram.org/a/"><img src="https://img.icons8.com/?size=512&id=9R1sV3QvY18K&format=png"></a>
+	  </div>
+	</div>
+
+	<div class="footer-right">
+		<div class="footer-links">
+	  <h5><a href="/recept">Предложить свой рецепт</a></h5>
+	</div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+		$('body').append('<div class="upbtn"></div>');			
+		$(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+		$('.upbtn').css({
+		transform: 'scale(1)'
+		});
+        } else {
+		$('.upbtn').css({
+		transform: 'scale(0)'
+		});
+        }
+		});
+		$('.upbtn').on('click',function() {
+        $('html, body').animate({
+		scrollTop: 0
+        }, 500);
+        return false;
+		
+		});
+	</script>
+<div class="upbtn" style="transform: scale(1);"></div>
+  </footer>
+
+</body>
+</html>

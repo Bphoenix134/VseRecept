@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8"> <!-- Кодировка -->
+	<title>Все рецепты.ру</title> <!-- Основной заголовк -->
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">  <!-- Использование css -->
+</head>
+<body>
+  <nav><!--  Меню --> 
+    <ul> 
+    <li>
+      <a href="/">Главная</a>
+    </li>
+    <li>
+      <a>Рецепты</a>
+      <ul>
+        <li><a href="/meat">Мясо</a></li> 
+        <li><a href="/salat">Салаты</a></li>
+        <li><a href="/sup">Супы</a></li>
+        <li><a href="/desert">Десерты</a></li>
+      </ul>
+      </li>
+      <li>
+        <a href="/menu">Наше меню</a>
+      </li>
+      <li>
+        <a href="/info">О нас</a>
+      </li>
+    </ul>
+  </nav> 
+        <form method="POST", action="{{url_for('recept')}}", class="form">
+          <h3>Опишите свой рецепт</h3>
+            <input type="text" placeholder="Название" name="name" id="name" required=""/>
+            <input type="text" placeholder="Тип блюда" name="kid" id="kid" required=""/>
+            <input type="text" placeholder="Общий вес" name="weight" id="weight" required=""/>
+            <input type="text" placeholder="Количество порций" name="count" id="count" required=""/>
+            <input type="text" placeholder="Сезон" name="season" id="season" required=""/>
+            <input type="text" placeholder="Необходимое оборудование" name="equip" id="equip" required=""/>
+            <input type="text" placeholder="Калорийность" name="calor" id="calor" required=""/>
+            <input type="text" placeholder="Время приготовления" name="time" id="time" required=""/>
+            <input type="text" placeholder="Последовательность приготовления" name="descr" id="descr" required=""/>
+            <div>
+              <button type="submit">Отправить свой рецепт</button>
+            </div>
+          </form>
+          <footer class="footer-distributed">
+
+            <div class="footer-left">
+          
+              <h3>Всерецепты.ру</h3>
+             <div class="footer-links">
+              <h5><a href="/">Главная<br></a></h5>
+              <h5><a>Рецепты</a></h5>
+                <ul class="nul">
+                  <li>
+                    <a  href="/meat">Мясо</a>
+                  </li>
+          
+                  <li>
+                    <a href="/sup">Супы</a>
+                  </li>
+                      
+                  <li>
+                    <a href="/salat">Салаты</a>
+                  </li>
+              <li>
+                <a href="/desert">Десерты</a>
+                </li>
+                </ul>
+            <h5><a href="/menu">Наше меню</a></h5>
+            <h5><a href="/info">О нас</a></h5>
+            </div>
+              <p class="footer-company-name">All Recepts © 2023</p>
+          
+              <div class="footer-icons">
+          
+              <a href="http://facebook.com/"><img src="https://img.icons8.com/?size=512&id=435&format=png"></a>
+              <a href="https://vk.com/feed"><img src="https://img.icons8.com/?size=512&id=38514&format=png"></a>
+              <a href="https://web.telegram.org/a/"><img src="https://img.icons8.com/?size=512&id=9R1sV3QvY18K&format=png"></a>
+              </div>
+            </div>
+          
+            <div class="footer-right">
+              <div class="footer-links">
+              <h5><a href="/recept">Предложить свой рецепт</a></h5>
+            </div>
+          </div>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+            $('body').append('<div class="upbtn"></div>');			
+            $(window).scroll(function() {
+            if ($(this).scrollTop() > 100) {
+            $('.upbtn').css({
+            transform: 'scale(1)'
+            });
+            } else {
+            $('.upbtn').css({
+            transform: 'scale(0)'
+            });
+            }
+            });
+            $('.upbtn').on('click',function() {
+            $('html, body').animate({
+            scrollTop: 0
+            }, 500);
+            return false;
+            
+            });
+        </script>
+    <div class="upbtn" style="transform: scale(1);"></div>
+      </footer>
+</body>
+</html>

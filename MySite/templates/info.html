@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8"> <!-- Кодировка -->
+	<title>Все рецепты.ру</title> <!-- Основной заголовк -->
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet"> <!-- Использование css -->
+</head>
+	
+<body>
+	<nav><!--  Меню --> 
+		<ul> 
+		  <li>
+			  <a href="/">Главная</a>
+		  </li>
+		  <li>
+			  <a>Рецепты</a>
+			  <ul>
+				  <li><a href="/meat">Мясо</a></li> 
+				  <li><a href="/salat">Салаты</a></li>
+				  <li><a href="/sup">Супы</a></li>
+				  <li><a href="/desert">Десерты</a></li>
+			  </ul>
+		  </li>
+		  <li>
+			<a href="/menu">Наше меню</a>
+		  </li>
+		  <li>
+			<a href="/info">О нас</a>
+		  </li>
+		</ul>
+	  </nav> 
+	  
+	  <div class="main">
+	  <div clas="main-left">
+	  <div class="regst"> <!--Вход или регистрация-->
+		  <p><br></p>
+		  <h3>Войти</h3>
+		  <input type="text" placeholder="Email или Номер телефона" id="username">
+		  <input type="text" placeholder="Пароль" id="password">
+		  <button>Войти</button>
+		  <h5>Впервые у нас? <a href="/regis">Регистрируйся</a></h5>
+	  </div>
+	  </div>
+	  
+	  <div class="main-right">
+	  <div class="photo-container-1" vspace="5" hspace="5"> <!--Реклама-->
+		  <div class="photo-0">
+			  <img src="https://img.freepik.com/free-psd/delicious-burger-and-food-menu-instagram-and-facebook-story-template_106176-1402.jpg?w=360&t=st=1684961132~exp=1684961732~hmac=09f9b80db916bf0cee96b528a5462c4316dae5e48a822ca2246dabf9ffb2929c">
+		  </div>    
+		  <div class="photo-1">
+			  <img src="https://img.freepik.com/free-psd/delicious-burger-and-food-menu-instagram-and-facebook-story-template_106176-1402.jpg?w=360&t=st=1684961132~exp=1684961732~hmac=09f9b80db916bf0cee96b528a5462c4316dae5e48a822ca2246dabf9ffb2929c">
+		  </div>
+		  <div class="photo-2">
+			  <img src="https://img.freepik.com/free-psd/food-menu-and-restaurant-instagram-and-facebook-story-template_106176-776.jpg?w=360&t=st=1684961318~exp=1684961918~hmac=28f8afa999a4f3963d5bbc10789ff2b8623b76b0378b2fbc4a24d38e5a658830">
+		  </div>
+	  </div>
+	  </div>
+
+<div class="top"> <!--Блок с рецептами-->
+	<h2>О НАС</h2>
+	<p>Сайт <span>Всерецепты.ру</span> сделан для того, чтобы упростить бытовую жизнь <span>каждого</span>. Если не знаешь, что приготовить? Ты всегда можешь зайти и посмотреть интересующий рецепт.</p> 
+	<p>Если же ты не хочешь готовить, устал и т.д. У нас на сайте можно также заказать <span>готовую еду</span>. Мы доставляем <span>по всей Москве</span></p>
+	<p>Мы готовим <span>вкусно</span> и <span>дешево</span></p>
+	<p>Кроме того вы можете внести свои плоды в <span>разрабодку</span> сайта. Просто заполните <span>форму</span> внизу сайта с вашим любимым и необычным рецептом.</p>
+	<p>Где мы находимся? Адрес: <span>Автомобильный пр., 1/29, Москва</span></p>
+	<p>Контакты: <span>8(901)012-23-12</span></p>
+		<div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2246.5877625932008!2d37.69271207678875!3d55.730915973076094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54acce4237e77%3A0x54cbff70efeea698!2z0KHRgtC-0LvQvtCy0LDRjyDQldC00LAg0L_Qvi3QtNC-0LzQsNGI0L3QtdC80YM!5e0!3m2!1sru!2sru!4v1685081852049!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+<p><br>
+<br></p>
+</div>
+</div>
+
+<footer class="footer-distributed">
+
+	<div class="footer-left">
+
+	  <h3>Всерецепты.ру</h3>
+ 	<div class="footer-links">
+	  <h5><a href="/">Главная<br></a></h5>
+	  <h5><a>Рецепты</a></h5>
+      <ul class="nul">
+        <li>
+          <a  href="/meat">Мясо</a>
+        </li>
+
+        <li>
+          <a href="/sup">Супы</a>
+        </li>
+            
+        <li>
+          <a href="/salat">Салаты</a>
+        </li>
+		<li>
+			<a href="/desert">Десерты</a>
+		  </li>
+      </ul>
+	<h5><a href="/menu">Наше меню</a></h5>
+	<h5><a href="/info">О нас</a></h5>
+	</div>
+	  <p class="footer-company-name">All Recepts © 2023</p>
+
+	  <div class="footer-icons">
+
+		<a href="http://facebook.com/"><img src="https://img.icons8.com/?size=512&id=435&format=png"></a>
+		<a href="https://vk.com/feed"><img src="https://img.icons8.com/?size=512&id=38514&format=png"></a>
+		<a href="https://web.telegram.org/a/"><img src="https://img.icons8.com/?size=512&id=9R1sV3QvY18K&format=png"></a>
+	  </div>
+	</div>
+
+	<div class="footer-right">
+		<div class="footer-links">
+	  <h5><a href="/recept">Предложить свой рецепт</a></h5>
+	</div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+		$('body').append('<div class="upbtn"></div>');			
+		$(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+		$('.upbtn').css({
+		transform: 'scale(1)'
+		});
+        } else {
+		$('.upbtn').css({
+		transform: 'scale(0)'
+		});
+        }
+		});
+		$('.upbtn').on('click',function() {
+        $('html, body').animate({
+		scrollTop: 0
+        }, 500);
+        return false;
+		
+		});
+	</script>
+<div class="upbtn" style="transform: scale(1);"></div>
+  </footer>
+
+</body>
+</html>

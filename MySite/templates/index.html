@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8"> <!-- Кодировка -->
+	<title>Все рецепты.ру</title> <!-- Основной заголовк -->
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">  <!-- Использование css -->
+</head>
+
+<body>
+<nav><!--  Меню --> 
+  <ul> 
+	<li>
+		<a href="/">Главная</a>
+	</li>
+	<li>
+		<a>Рецепты</a>
+		<ul>
+			<li><a href="/meat">Мясо</a></li> 
+			<li><a href="/salat">Салаты</a></li>
+			<li><a href="/sup">Супы</a></li>
+			<li><a href="/desert">Десерты</a></li>
+		</ul>
+    </li>
+    <li>
+      <a href="/menu">Наше меню</a>
+    </li>
+    <li>
+      <a href="/info">О нас</a>
+    </li>
+  </ul>
+</nav> 
+
+<div class="main">
+<div clas="main-left">
+<div class="regst"> <!--Вход или регистрация-->
+	<p><br></p>
+	<h3>Войти</h3>
+    <input type="text" placeholder="Email или Номер телефона" id="login">
+	<input type="text" placeholder="Пароль" id="password">
+	<button>Войти</button>
+	<h5>Впервые у нас? <a href="/regis">Регистрируйся</a></h5>
+</div>
+</div>
+
+<div class="main-right">
+<div class="photo-container-1" vspace="5" hspace="5"> <!--Реклама-->
+    <div class="photo-0">
+        <img src="https://img.freepik.com/free-psd/delicious-burger-and-food-menu-instagram-and-facebook-story-template_106176-1402.jpg?w=360&t=st=1684961132~exp=1684961732~hmac=09f9b80db916bf0cee96b528a5462c4316dae5e48a822ca2246dabf9ffb2929c">
+    </div>    
+    <div class="photo-1">
+        <img src="https://img.freepik.com/free-psd/delicious-burger-and-food-menu-instagram-and-facebook-story-template_106176-1402.jpg?w=360&t=st=1684961132~exp=1684961732~hmac=09f9b80db916bf0cee96b528a5462c4316dae5e48a822ca2246dabf9ffb2929c">
+    </div>
+    <div class="photo-2">
+        <img src="https://img.freepik.com/free-psd/food-menu-and-restaurant-instagram-and-facebook-story-template_106176-776.jpg?w=360&t=st=1684961318~exp=1684961918~hmac=28f8afa999a4f3963d5bbc10789ff2b8623b76b0378b2fbc4a24d38e5a658830">
+    </div>
+</div>
+</div>
+
+ <div class="top"><!--Блок с рецептами-->
+	<h2>РЕЦЕПТЫ НЕДЕЛИ</h2>
+
+<div class="recept"> <!--Один рецепт-->
+	<img class="rec" src="https://cookingfood.ru/wp-content/uploads/2022/07/1632964414_22-mykaleidoscope-ru-p-bolshoi-tort-napoleon-krasivo-foto-33-600x400.jpg" >
+	<p>Нежнейший наполеон на сливках</p>
+	<p style="font-size: 1.2em;">Этот рецепт для любителей мягкого и пропитанного наполеона. Коржи хорошо пропитываются, и торт получается очень мягким и нежным, в меру сладким и безумно вкусным</p>
+	<table>
+		<tr class="colo">
+			<th>Мука </th>
+			<th>750гр</th>
+		</tr>
+		<tr>
+			<th>Яйца </th>
+			<th>6шт</th>
+		</tr>
+		<tr class="colo">
+			<th>Вода </th>
+			<th>150мл</th>
+		</tr>
+		<tr>
+			<th>Молоко </th>
+			<th>1000мл</th>
+		</tr>
+		<tr class="colo">
+			<th>Масло </th>
+			<th>400гр</th>
+		</tr>
+	</table>
+<div class="ic">
+	<p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  1.45 часа</p>   
+	<p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> 12х200гр</p>
+</div>
+<p><br></p>
+</div>
+
+<div class="recept"> <!--Один рецепт-->
+	<img class="rec" src="https://recept-borscha.ru/wp-content/uploads/c/2/9/c29aa8367067f1accb7a5128e9fa8e29.jpeg" >
+	<p>Борщ как у бабушки</p>
+	<p style="font-size: 1.2em;">Знаменитый красный борщ любят за особенный аромат, удивительный вкус и насыщенный цвет. Идеальное сочетание овощей придают красному борщу тот индивидуальный вкус.</p>
+	<table>
+		<tr class="colo">
+			<th>Говядина </th>
+			<th>500гр</th>
+		</tr>
+		<tr>
+			<th>Свёкла </th>
+			<th>1шт</th>
+		</tr>
+		<tr class="colo">
+			<th>Картофель </th>
+			<th>2шт</th>
+		</tr>
+		<tr>
+			<th>Морковь </th>
+			<th>1шт</th>
+		</tr>
+		<tr class="colo">
+			<th>Вода </th>
+			<th>1.5л</th>
+		</tr>
+		<tr>
+			<th>Лук </th>
+			<th>1шт</th>
+		</tr>
+		<tr class="colo">
+			<th>Сметана </th>
+			<th>2ст.ложки</th>
+		</tr>
+	</table>
+<div class="ic">
+	<p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  2.10 часа</p>   
+	<p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> 4х180гр</p>
+</div>
+<p><br></p>
+</div>
+
+<div class="recept"> <!--Один рецепт-->
+	<img class="rec" src="https://podacha-blud.com/uploads/posts/2022-12/1670424482_26-podacha-blud-com-p-salat-tsezar-v-tarelke-foto-30.jpg" >
+	<p>Оригинальный цезарь с курицей и помидорами</p>
+	<p style="font-size: 1.2em;">Салат "Цезарь" с курицей и помидорами - вкусный, сытный и очень аппетитный на вид. Несмотря на кажущиеся трудности в приготовлении, салат с курицей готовится легко и быстро.</p>
+	<table>
+		<tr class="colo">
+			<th>Курица </th>
+			<th>200гр</th>
+		</tr>
+		<tr>
+			<th>Сыр </th>
+			<th>70гр</th>
+		</tr>
+		<tr class="colo">
+			<th>Салат </th>
+			<th>100гр</th>
+		</tr>
+		<tr>
+			<th>Яйца </th>
+			<th>2шт</th>
+		</tr>
+		<tr class="colo">
+			<th>Помидоры черри </th>
+			<th>10шт</th>
+		</tr>
+	</table>
+<div class="ic">
+	<p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  1.12 часа</p>   
+	<p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> 3х150гр</p>
+</div>
+<p><br></p>
+</div>
+
+<div class="recept"> <!--Один рецепт-->
+	<img class="rec" src="http://klubmama.ru/uploads/posts/2022-08/1660555406_26-klubmama-ru-p-sushi-podelka-svoimi-rukami-foto-26.jpg" >
+	<p>Роллы в домашних условиях</p>
+	<p style="font-size: 1.2em;">Аппетитные запечённые роллы с куриным филе и икрой мойвы порадуют вас своим насыщенным вкусом. Такие роллы приготовить совсем не сложно, получится даже у новичков.</p>
+	<table>
+		<tr class="colo">
+			<th>Рис </th>
+			<th>500гр</th>
+		</tr>
+		<tr>
+			<th>Огурец </th>
+			<th>1шт</th>
+		</tr>
+		<tr class="colo">
+			<th>Лосось </th>
+			<th>100гр</th>
+		</tr>
+		<tr>
+			<th>Нори </th>
+			<th>15листов</th>
+		</tr>
+		<tr class="colo">
+			<th>Уксус рисовый </th>
+			<th>50мл</th>
+		</tr>
+	</table>
+<div class="ic">
+	<p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  2.15 часа</p>   
+	<p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> 2х200гр</p>
+</div>
+<p><br></p>
+</div>
+<h2>ВАШИ РЕЦЕПТЫ</h2>
+<div class="recept"> <!--Один рецепт-->
+	{% for recepe in recepes %}
+	<p>{{recepe.name}}</p>
+	
+	<p style="font-size: 1.2em;">{{recepe.descr}}</p>
+	{% for recepe1 in receps %}
+	<table>
+		<tr class="colo">
+			<th>{{recepe1.ingr}}</th>
+			<th>{{recepe1.countingr}}</th>
+		</tr>
+	</table>
+	{% endfor %}
+<div class="ic">
+	<p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  {{recepe.time}} минут</p>   
+	<p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> {{recepe.count}}х{{(recepe.weight/recepe.count)|round}}гр</p>
+</div>
+<p><br></p>
+{% endfor %}
+</div>
+<p><br>
+<br></p>
+</div>
+</div>
+</div>
+
+<footer class="footer-distributed">
+
+	<div class="footer-left">
+
+	  <h3>Всерецепты.ру</h3>
+ 	<div class="footer-links">
+	  <h5><a href="/">Главная<br></a></h5>
+	  <h5><a>Рецепты</a></h5>
+      <ul class="nul">
+        <li>
+          <a  href="/meat">Мясо</a>
+        </li>
+
+        <li>
+          <a href="/sup">Супы</a>
+        </li>
+            
+        <li>
+          <a href="/salat">Салаты</a>
+        </li>
+		<li>
+			<a href="/desert">Десерты</a>
+		  </li>
+      </ul>
+	<h5><a href="/menu">Наше меню</a></h5>
+	<h5><a href="/info">О нас</a></h5>
+	</div>
+	  <p class="footer-company-name">All Recepts © 2023</p>
+
+	  <div class="footer-icons">
+
+		<a href="http://facebook.com/"><img src="https://img.icons8.com/?size=512&id=435&format=png"></a>
+		<a href="https://vk.com/feed"><img src="https://img.icons8.com/?size=512&id=38514&format=png"></a>
+		<a href="https://web.telegram.org/a/"><img src="https://img.icons8.com/?size=512&id=9R1sV3QvY18K&format=png"></a>
+	  </div>
+	</div>
+
+	<div class="footer-right">
+		<div class="footer-links">
+	  <h5><a href="/recept">Предложить свой рецепт</a></h5>
+	</div>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+		$('body').append('<div class="upbtn"></div>');			
+		$(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+		$('.upbtn').css({
+		transform: 'scale(1)'
+		});
+        } else {
+		$('.upbtn').css({
+		transform: 'scale(0)'
+		});
+        }
+		});
+		$('.upbtn').on('click',function() {
+        $('html, body').animate({
+		scrollTop: 0
+        }, 500);
+        return false;
+		
+		});
+	</script>
+<div class="upbtn" style="transform: scale(1);"></div>
+  </footer>
+
+</body>
+</html>

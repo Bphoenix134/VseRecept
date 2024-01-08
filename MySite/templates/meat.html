@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8"> <!-- Кодировка -->
+	<title>Все рецепты.ру</title> <!-- Основной заголовк -->
+	<link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">  <!-- Использование css -->
+</head>
+	
+<body>
+	<nav><!--  Меню --> 
+		<ul> 
+		  <li>
+			  <a href="/">Главная</a>
+		  </li>
+		  <li>
+			  <a>Рецепты</a>
+			  <ul>
+				  <li><a href="/meat">Мясо</a></li> 
+				  <li><a href="/salat">Салаты</a></li>
+				  <li><a href="/sup">Супы</a></li>
+				  <li><a href="/desert">Десерты</a></li>
+			  </ul>
+		  </li>
+		  <li>
+			<a href="/menu">Наше меню</a>
+		  </li>
+		  <li>
+			<a href="/info">О нас</a>
+		  </li>
+		</ul>
+	  </nav> 
+	  
+	  <div class="main">
+	  <div clas="main-left">
+	  <div class="regst"> <!--Вход или регистрация-->
+		  <p><br></p>
+		  <h3>Войти</h3>
+		  <input type="text" placeholder="Email или Номер телефона" id="username">
+		  <input type="text" placeholder="Пароль" id="password">
+		  <button>Войти</button>
+		  <h5>Впервые у нас? <a href="/regis">Регистрируйся</a></h5>
+	  </div>
+	  </div>
+	  
+	  <div class="main-right">
+	  <div class="photo-container-1" vspace="5" hspace="5"> <!--Реклама-->
+		  <div class="photo-0">
+			  <img src="https://img.freepik.com/free-psd/delicious-burger-and-food-menu-instagram-and-facebook-story-template_106176-1402.jpg?w=360&t=st=1684961132~exp=1684961732~hmac=09f9b80db916bf0cee96b528a5462c4316dae5e48a822ca2246dabf9ffb2929c">
+		  </div>    
+		  <div class="photo-1">
+			  <img src="https://img.freepik.com/free-psd/delicious-burger-and-food-menu-instagram-and-facebook-story-template_106176-1402.jpg?w=360&t=st=1684961132~exp=1684961732~hmac=09f9b80db916bf0cee96b528a5462c4316dae5e48a822ca2246dabf9ffb2929c">
+		  </div>
+		  <div class="photo-2">
+			  <img src="https://img.freepik.com/free-psd/food-menu-and-restaurant-instagram-and-facebook-story-template_106176-776.jpg?w=360&t=st=1684961318~exp=1684961918~hmac=28f8afa999a4f3963d5bbc10789ff2b8623b76b0378b2fbc4a24d38e5a658830">
+		  </div>
+	  </div>
+	  </div>
+	  
+	   <div class="top"><!--Блок с рецептами-->
+	
+	  <h2>РЕЦЕПТЫ С МЯСОМ</h2>
+	  
+<div class="recept"> <!--Один рецепт-->
+	<img class="rec" src="https://fitafood.ru/wp-content/uploads/1582149617_zharkoe-v-multivarke.jpg" >
+	<p>Жаркое по-деревенски</p>
+	<p style="font-size: 1.2em;">Простое, но очень ароматное и вкусное блюдо для семейного обеда или ужина.</p>
+	<table>
+		<tr class="colo">
+			<th>Свинина</th>
+			<th>1000гр</th>
+		</tr>
+		<tr>
+			<th>Сало </th>
+			<th>50г</th>
+		</tr>
+		<tr class="colo">
+			<th>Картофель </th>
+			<th>1000г</th>
+		</tr>
+		<tr>
+			<th>Морковь</th>
+			<th>2шт</th>
+		</tr>
+		<tr class="colo">
+			<th>Лук</th>
+			<th>1шт</th>
+		</tr>
+	</table>
+<div class="ic">
+	<p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  1.32 часа</p>   
+	<p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> 4х220гр</p>
+</div>
+<p><br></p>
+</div>
+
+<div class="recept"> <!--Один рецепт-->
+	<img class="rec" src="https://infoeda.com/wp-content/uploads/2019/04/Lenivye-golubtsy-v-duhovke.jpg" >
+	<p>Ленивые голубцы в духовке</p>
+	<p style="font-size: 1.2em;">Когда хочется голубцов, а времени на их приготовление нет, выручает ленивый вариант приготовления этого блюда.</p>
+	<table>
+		<tr class="colo">
+			<th>Фарш </th>
+			<th>400гр</th>
+		</tr>
+		<tr>
+			<th>Капуста </th>
+			<th>400гр</th>
+		</tr>
+		<tr class="colo">
+			<th>Рис</th>
+			<th>420гр</th>
+		</tr>
+		<tr>
+			<th>Яйцо</th>
+			<th>1шт</th>
+		</tr>
+		<tr class="colo">
+			<th>Вода </th>
+			<th>1.5л</th>
+		</tr>
+		<tr>
+			<th>Морковь </th>
+			<th>1шт</th>
+		</tr>
+		<tr class="colo">
+			<th>Масло </th>
+			<th>2ст.ложки</th>
+		</tr>
+	</table>
+<div class="ic">
+	<p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  2.00 часа</p>   
+	<p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> 3х240гр</p>
+</div>
+<p><br></p>
+</div>
+
+<div class="recept"> <!--Один рецепт-->
+	<img class="rec" src="https://kartinkin.net/uploads/posts/2021-07/1625191537_1-kartinkin-com-p-kotleta-po-kievski-yeda-krasivo-foto-2.jpg" >
+	<p>Котлета по-киевски</p>
+	<p style="font-size: 1.2em;">Кто сказал, что котлеты по-киевски нельзя приготовить дома на сковороде? Глупости! Котлеты по-киевски, рецепт которых хочу вам предложить, можно и нужно готовить!</p>
+	<table>
+		<tr class="colo">
+			<th>Филе курицы</th>
+			<th>1шт</th>
+		</tr>
+		<tr>
+			<th>Масло сливочное</th>
+			<th>120гр</th>
+		</tr>
+		<tr class="colo">
+			<th>Зелень </th>
+			<th>по вкусу</th>
+		</tr>
+		<tr>
+			<th>Яйца </th>
+			<th>2шт</th>
+		</tr>
+		<tr class="colo">
+			<th>Соль </th>
+			<th>шепотка</th>
+		</tr>
+	</table>
+<div class="ic">
+	<p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  1.24 часа</p>   
+	<p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> 5х150гр</p>
+</div>
+<p><br></p>
+</div>
+
+<div class="recept"> <!--Один рецепт-->
+	<img class="rec" src="https://shashlick.ru/wp-content/uploads/0/6/c/06c53ab79483d35f47646dd76d09fd02.jpg" >
+	<p>Шашлык на сковороде</p>
+	<p style="font-size: 1.2em;">Хочется шашлыка, а нет времени даже на пикник пойти. Этот рецепт - идеальный выход для вас. Вечером за 10 минут замаринуем мясо, а на следующий день кинем мясо на сковородку - "чик", и готов шашлык!.</p>
+	<table>
+		<tr class="colo">
+			<th>Свинина </th>
+			<th>1000гр</th>
+		</tr>
+		<tr>
+			<th>Лук </th>
+			<th>4шт</th>
+		</tr>
+		<tr class="colo">
+			<th>Лимонный сок </th>
+			<th>150мл</th>
+		</tr>
+		<tr>
+			<th>Сливочное масло </th>
+			<th>3ст.ложки</th>
+		</tr>
+		<tr class="colo">
+			<th>Перец</th>
+			<th>по вкусу</th>
+		</tr>
+	</table>
+<div class="ic">
+	<p style="float:left;"><img src="https://img.icons8.com/?size=512&id=MTGGWA4yGgEc&format=png">  2.05 часа</p>   
+	<p style="float:right;"><img src="https://img.icons8.com/?size=512&id=57dGwCuVl2KL&format=png"> 2х200гр</p>
+</div>
+	  
+	  <p><br></p>
+	  </div>
+	  <p><br>
+	  <br></p>
+	  </div>
+	  </div>
+	  
+	  <footer class="footer-distributed">
+
+		<div class="footer-left">
+	
+		  <h3>Всерецепты.ру</h3>
+		 <div class="footer-links">
+		  <h5><a href="/">Главная<br></a></h5>
+		  <h5><a>Рецепты</a></h5>
+		  <ul class="nul">
+			<li>
+			  <a  href="/meat">Мясо</a>
+			</li>
+	
+			<li>
+			  <a href="/sup">Супы</a>
+			</li>
+				
+			<li>
+			  <a href="/salat">Салаты</a>
+			</li>
+			<li>
+				<a href="/desert">Десерты</a>
+			  </li>
+		  </ul>
+		<h5><a href="/menu">Наше меню</a></h5>
+		<h5><a href="/info">О нас</a></h5>
+		</div>
+		  <p class="footer-company-name">All Recepts © 2023</p>
+	
+		  <div class="footer-icons">
+	
+			<a href="http://facebook.com/"><img src="https://img.icons8.com/?size=512&id=435&format=png"></a>
+			<a href="https://vk.com/feed"><img src="https://img.icons8.com/?size=512&id=38514&format=png"></a>
+			<a href="https://web.telegram.org/a/"><img src="https://img.icons8.com/?size=512&id=9R1sV3QvY18K&format=png"></a>
+		  </div>
+		</div>
+	
+		<div class="footer-right">
+			<div class="footer-links">
+		  <h5><a href="/recept">Предложить свой рецепт</a></h5>
+		</div>
+	</div>
+	  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	  <script>
+			  $('body').append('<div class="upbtn"></div>');			
+			  $(window).scroll(function() {
+			  if ($(this).scrollTop() > 100) {
+			  $('.upbtn').css({
+			  transform: 'scale(1)'
+			  });
+			  } else {
+			  $('.upbtn').css({
+			  transform: 'scale(0)'
+			  });
+			  }
+			  });
+			  $('.upbtn').on('click',function() {
+			  $('html, body').animate({
+			  scrollTop: 0
+			  }, 500);
+			  return false;
+			  
+			  });
+		  </script>
+	  <div class="upbtn" style="transform: scale(1);"></div>
+		</footer>
+
+</body>
+</html>
